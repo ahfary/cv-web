@@ -1,5 +1,3 @@
-'use strict';
-
 // element toggle function
 const elementToggleFunc = function (elem) { elem.classList.toggle("active"); }
 
@@ -87,33 +85,33 @@ for (let i = 0; i < filterBtn.length; i++) {
   });
 }
 
-// contact form variables
+// variabel formulir kontak
 const form = document.querySelector("[data-form]");
 const formInputs = document.querySelectorAll("[data-form-input]");
 const formBtn = document.querySelector("[data-form-btn]");
 
 // Menambahkan Event kepada semua input form
 for (let i = 0; i < formInputs.length; i++) {
-  formInputs[i].addEventListener("input", function () {
-    if (form.checkValidity()) {
+  formInputs[i].addEventListener("input", function () { // kasih event input untuk mengecek setiap perubahan
+    if (form.checkValidity()) { // perkondisian apabila semua input form sudah valid maka atribut disabled pada button akan dihilangkan.
       formBtn.removeAttribute("disabled");
-    } else {
+    } else { // kalo belum valid semua maka buttonnya disabled
       formBtn.setAttribute("disabled", "");
     }
   });
 }
 
-// Halaman Variable Nav
+// variabel navigasi bar
 const navigationLinks = document.querySelectorAll("[data-nav-link]");
 const pages = document.querySelectorAll("[data-page]");
 
 // Menambahkan Event kepada semua nav link
 for (let i = 0; i < navigationLinks.length; i++) {
-  navigationLinks[i].addEventListener("click", function () {
+  navigationLinks[i].addEventListener("click", function () { // dikasih event click agar tau link mana yang di klik
     for (let j = 0; j < pages.length; j++) {
       if (this.innerHTML.toLowerCase() === pages[j].dataset.page) {
-        pages[j].classList.add("active");
-        navigationLinks[j].classList.add("active");
+        pages[j].classList.add("active"); // dikasih class active biar display halamannya block
+        navigationLinks[j].classList.add("active"); // dikasih class active juga biar link yang di klik berubah warnanya.
         window.scrollTo(0, 0);
       } else {
         pages[j].classList.remove("active");

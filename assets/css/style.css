@@ -867,7 +867,7 @@ main {
 }
 
 .modal-avatar-box {
-  background: var(--jet-gray);
+  background: var(--bg-box);
   width: max-content;
   border-radius: 14px;
   margin-bottom: 15px;
