@@ -1074,45 +1074,28 @@ main {
   background: var(--orange-yellow-crayola);
   height: 100%;
   border-radius: inherit;
-}
-.skill-progress-fill.progress-1.active {
   animation: progressAnimation 2s ease-in-out forwards;
-  background: var(--orange-yellow-crayola);
-  height: 100%;
-  border-radius: inherit;
 }
+
 .skill-progress-fill.progress-2 {
   background: var(--orange-yellow-crayola);
   height: 100%;
   border-radius: inherit;
-}
-.skill-progress-fill.progress-2.active {
   animation: progressAnimationSatu 2s ease-in-out forwards;
-  background: var(--orange-yellow-crayola);
-  height: 100%;
-  border-radius: inherit;
 }
+
 .skill-progress-fill.progress-3 {
   background: var(--orange-yellow-crayola);
   height: 100%;
   border-radius: inherit;
-}
-.skill-progress-fill.progress-3.active {
   animation: progressAnimationDua 2s ease-in-out forwards;
-  background: var(--orange-yellow-crayola);
-  height: 100%;
-  border-radius: inherit;
 }
+
 .skill-progress-fill.progress-4 {
   background: var(--orange-yellow-crayola);
   height: 100%;
   border-radius: inherit;
-}
-.skill-progress-fill.progress-4.active {
   animation: progressAnimationtiga 2s ease-in-out forwards;
-  background: var(--orange-yellow-crayola);
-  height: 100%;
-  border-radius: inherit;
 }
 
 
