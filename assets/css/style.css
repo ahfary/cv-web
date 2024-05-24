@@ -23,15 +23,6 @@ body::-webkit-scrollbar-thumb {
   border-radius: 10px;
   
 }
-
-/*-----------------------------------*\
-  #style.css
-\*-----------------------------------*/
-
-/**
- * copyright 2022 @codewithsadee
- */
-
 /*-----------------------------------*\
   #CUSTOM PROPERTY
 \*-----------------------------------*/
@@ -84,8 +75,6 @@ body::-webkit-scrollbar-thumb {
 
   --jet: hsl(0, 0%, 22%);
   --onyx: hsl(240, 1%, 17%);
-  --eerie-black-1: hsl(240, 2%, 13%);
-  --eerie-black-2: hsl(240, 2%, 12%);
   --smoky-black: hsl(0, 0%, 7%);
   --white-1: hsl(0, 0%, 100%);
   --white-2: hsl(0, 0%, 98%);
@@ -446,7 +435,7 @@ main {
   visibility: visible;
 }
 
-/* CONTACTssss */
+/* CONTACT */
 
 .contacts-list {
   display: grid;
@@ -529,13 +518,13 @@ main {
   align-items: center;
   overflow: hidden;
   width: 100%;
-  height: 150px; /* You can adjust this value */
+  height: 150px; 
 }
 
 .image {
   max-width: 50%;
   max-height: 50%;
-  object-fit: contain; /* Ensures the image fits within the container without distorting the aspect ratio */
+  object-fit: contain;
 }
 
 .content {
@@ -544,7 +533,7 @@ main {
 
 .title {
   font-size: 1.25rem;
-  color: #ffffff;
+  color: var(--white-1);
   margin-bottom: 0.5rem;
 }
 
@@ -552,6 +541,7 @@ main {
   font-size: 0.875rem;
   color: var(--light-gray-70);
 }
+
 
 /*-----------------------------------*\
     #NAVBAR
@@ -1374,7 +1364,7 @@ textarea.form-input::-webkit-resizer {
   position: relative;
   width: 100%;
   background: var(--secondary);
-  color: white;
+  color: var(--white-1);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1433,9 +1423,6 @@ textarea.form-input::-webkit-resizer {
     #RESPONSIVE
   \*-----------------------------------*/
 
-/**
-   * responsive larger than 450px screen
-   */
 
 @media (min-width: 450px) {
   /**
@@ -1455,9 +1442,6 @@ textarea.form-input::-webkit-resizer {
   }
 }
 
-/**
-   * responsive larger than 580px screen
-   */
 
 @media (min-width: 580px) {
   /**
@@ -1977,9 +1961,6 @@ textarea.form-input::-webkit-resizer {
 
 }
 
-/**
-   * responsive larger than 1250px screen
-   */
 
 @media (min-width: 1250px) {
   /**

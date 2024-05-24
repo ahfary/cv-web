@@ -1,14 +1,14 @@
-// element toggle function
+// Fungsi togle aktif pada elemen
 const elementToggleFunc = function (elem) { elem.classList.toggle("active"); }
 
-// sidebar variable
+// seleksi sidebar
 const sidebar = document.querySelector("[data-sidebar]");
 const sidebarBtn = document.querySelector("[data-sidebar-btn]");
 
-// sidebar toggle functionality for mobile
+// fungsi sidebar untuk mobile
 sidebarBtn.addEventListener("click", function () { elementToggleFunc(sidebar); });
 
-// testimonials variables
+// seleksi testimoni
 const testimonialsItem = document.querySelectorAll("[data-testimonials-item]");
 const modalContainer = document.querySelector("[data-modal-container]");
 const modalCloseBtn = document.querySelector("[data-modal-close-btn]");
@@ -19,7 +19,7 @@ const modalImg = document.querySelector("[data-modal-img]");
 const modalTitle = document.querySelector("[data-modal-title]");
 const modalText = document.querySelector("[data-modal-text]");
 
-// modal toggle function
+// fungsi toggle modal
 const testimonialsModalFunc = function () {
   modalContainer.classList.toggle("active");
   overlay.classList.toggle("active");
@@ -36,7 +36,7 @@ for (let i = 0; i < testimonialsItem.length; i++) {
   });
 }
 
-// Menambahkan Event click kepada tombol close modal
+// Event click kepada tombol close modal
 modalCloseBtn.addEventListener("click", testimonialsModalFunc);
 overlay.addEventListener("click", testimonialsModalFunc);
 
@@ -71,7 +71,7 @@ const filterFunc = function (selectedValue) {
   }
 }
 
-// Menambahkan filter kedalam semua filter tombol untuk Large screen
+// semua filter tombol untuk Large screen
 let lastClickedBtn = filterBtn[0];
 
 for (let i = 0; i < filterBtn.length; i++) {
