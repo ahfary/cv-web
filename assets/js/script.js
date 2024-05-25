@@ -92,9 +92,6 @@ const formInputs = document.querySelectorAll("[data-form-input]");
 const formBtn = document.querySelector("[data-form-btn]");
 
 // Menambahkan Event kepada semua input form
-// const handleSend() {
-//   window.open(`https://wa.me/+6287765106387` , _blank)
-// }
 for (let i = 0; i < formInputs.length; i++) {
   formInputs[i].addEventListener("input", function () { // kasih event input untuk mengecek setiap perubahan
     if (form.checkValidity()) { // perkondisian apabila semua input form sudah valid maka atribut disabled pada button akan dihilangkan.
@@ -104,11 +101,6 @@ for (let i = 0; i < formInputs.length; i++) {
     }
   });
 }
-
-
-
-// https://wa.me/${phoneNumber}?text=${encodeURIComponent(`name: ${fullName}\nphone: ${phone}\nemail: ${email}\nmesssage: ${message}`)}`;
-//     window.open(whatsappUrl, '_blank')
 
 // variabel navigasi bar
 const navigationLinks = document.querySelectorAll("[data-nav-link]");
